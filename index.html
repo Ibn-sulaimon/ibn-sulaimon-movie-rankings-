@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ibn-sulaimon fevorite moive ranking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js/script.js" defer></script>
+</head>
+<body>
+  
+<div id="loading-screen">
+    <div class="loader-content">
+        <div class="loader-icon">IS</div>
+        <h2>IBN SULAIMON</h2>
+        <p>MOVIE RANKINGS</p>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+        <span>PREPARING YOUR CINEMA EXPERIENCE...</span>
+    </div>
+</div>
+
+<header class="hero">
+    <div class="hero-content">
+        <p class="hero-label">WELCOME TO MY CINEMA WORLD</p>
+
+        <h1>IBN SULAIMON<br>MOVIE RANKINGS</h1>
+
+        <p class="hero-description">
+            Exploring unforgettable stories, legendary characters,
+            epic battles, and the movies that deserve a place at the top.
+        </p>
+
+        <a href="#rankings" class="hero-button">
+            EXPLORE MY RANKINGS
+        </a>
+    </div>
+</header>
+
+
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#rankings">Rankings</a>
+    <a href="#about">About</a>
+    <a href="watchlist.html">❤️ My Watchlist</a>
+    <button id="theme-toggle" type="button" aria-pressed="false">
+        ☀️ Light Mode
+    </button>
+</nav>
+
+<main>
+    
+<section class="top-movies">
+    <p class="spotlight-label">THE ELITE COLLECTION</p>
+    <h2>🏆 TOP 3 MOVIES</h2>
+    <p class="spotlight-description">
+        Three outstanding picks from the IBN SULAIMON rankings.
+    </p>
+
+    <div class="top-movies-grid">
+      
+<a href="https://en.wikipedia.org/wiki/Naruto:_Shippuden"
+   target="_blank" rel="noopener noreferrer"
+   class="top-movie">
+    <img src="images/naruto.jpg"
+         alt="Naruto Shippuden poster"
+         class="spotlight-poster">
+    <span class="top-number">01</span>
+    <h3>Naruto Shippuden</h3>
+    <span class="top-score">★ 9.8/10</span>
+</a>
+
+
+       
+<a href="https://en.wikipedia.org/wiki/Solo_Leveling"
+   target="_blank" rel="noopener noreferrer"
+   class="top-movie">
+    <img src="images/solo-leveling.jpg"
+         alt="Solo Leveling poster"
+         class="spotlight-poster">
+    <span class="top-number">02</span>
+    <h3>Solo Leveling</h3>
+    <span class="top-score">★ 9.5/10</span>
+</a>
+
+
+<a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)"
+   target="_blank" rel="noopener noreferrer"
+   class="top-movie">
+    <img src="images/avengers.jpg"
+         alt="The Avengers movie poster"
+         class="spotlight-poster">
+    <span class="top-number">03</span>
+    <h3>The Avengers</h3>
+    <span class="top-score">★ 9.0/10</span>
+</a>
+
+    </div>
+
+    <a href="#rankings" class="all-rankings-link">
+        VIEW ALL RANKINGS ↓
+    </a>
+</section>
+
+<section id="rankings" class="rankings-section">
+    <div class="section-heading">
+        <p class="hero-label">THE ULTIMATE COLLECTION</p>
+        <h2>IBN SULAIMON'S MOVIE RANKINGS</h2>
+        <p>Anime legends, Marvel heroes, and unforgettable animated adventures.</p>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-container">
+        <input
+            type="text"
+            id="movieSearch"
+            placeholder="🔍 Search titles..."
+            aria-label="Search titles"
+        >
+        <p id="searchMessage">Explore your favourite titles.</p>
+    </div>
+
+    <!-- GENRE FILTER -->
+    <div class="genre-filter-container">
+        <label for="genreFilter">Filter by genre:</label>
+        <select id="genreFilter">
+            <option value="all">All Genres</option>
+            <option value="anime">Anime</option>
+            <option value="action">Action</option>
+            <option value="superhero">Superhero</option>
+            <option value="animation">Animation</option>
+            <option value="comedy">Comedy</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select>
+        <p id="genreMessage">20 titles shown.</p>
+    </div>
+
+    <div class="movie-grid">
+
+        <!-- 1. NARUTO SHIPPUDEN -->
+        <article class="movie-card" data-genre="anime action">
+            <div class="movie-poster">
+                <img src="images/naruto.jpg" alt="Naruto Shippuden poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #1</span>
+                <h3>Naruto Shippuden</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.8/10</span></div>
+                <p>Naruto Shippuden follows Naruto Uzumaki as he grows from a determined young ninja into a powerful shinobi who refuses to abandon his dream of becoming Hokage. Along the way, he faces dangerous enemies, difficult missions, and challenges that test his courage and loyalty.</p>
+                <p>Beyond its spectacular battles, the series explores loneliness, friendship, forgiveness, sacrifice, and the cycle of hatred. Naruto's determination to understand others, even those who hurt him, makes this an unforgettable story about never giving up on yourself or the people you care about.</p>
+                <button class="watchlist-btn" data-title="Naruto Shippuden">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 2. SOLO LEVELING -->
+        <article class="movie-card" data-genre="anime action fantasy">
+            <div class="movie-poster">
+                <img src="images/solo-leveling.jpg" alt="Solo Leveling poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #2</span>
+                <h3>Solo Leveling</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.5/10</span></div>
+                <p>In a world where hunters battle monsters emerging from mysterious gates, Sung Jinwoo is known as one of the weakest. After a deadly dungeon incident, he gains a unique ability that allows him to grow stronger through a mysterious levelling system.</p>
+                <p>His journey transforms him from an underestimated hunter into a formidable force. With thrilling fights, impressive shadow soldiers, and a constant sense of danger, Solo Leveling delivers a powerful progression fantasy about survival, ambition, and the price of strength.</p>
+                <button class="watchlist-btn" data-title="Solo Leveling">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 3. THE AVENGERS -->
+        <article class="movie-card" data-genre="action superhero sci-fi">
+            <div class="movie-poster">
+                <img src="images/avengers.jpg" alt="The Avengers poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #3</span>
+                <h3>The Avengers</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.0/10</span></div>
+                <p>When Loki threatens Earth, Nick Fury brings together Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. Although their personalities and methods clash, they must learn to work together before the threat becomes unstoppable.</p>
+                <p>The film combines superhero action with humour, memorable character moments, and the excitement of seeing different heroes share one adventure. It establishes the Avengers as a team whose greatest strength is not individual power, but their ability to stand together when the world needs them.</p>
+                <button class="watchlist-btn" data-title="The Avengers">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 4. SPIDER-MAN -->
+        <article class="movie-card" data-genre="action superhero">
+            <div class="movie-poster">
+                <img src="images/spider-man.jpg" alt="Spider-Man poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #4</span>
+                <h3>Spider-Man</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.8/10</span></div>
+                <p>Spider-Man follows Peter Parker, a young hero balancing ordinary life with the responsibility of protecting people from dangerous criminals and super-powered enemies. His abilities make him extraordinary, but his personal struggles keep him relatable.</p>
+                <p>One of Spider-Man's strongest themes is responsibility: doing what is right even when it costs something personally. His courage, humour, and willingness to help ordinary people make his stories enduring adventures about growing up and choosing to use power for good.</p>
+                <button class="watchlist-btn" data-title="Spider-Man">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 5. TOM AND JERRY -->
+        <article class="movie-card" data-genre="animation comedy">
+            <div class="movie-poster">
+                <img src="images/tom-and-jerry.jpg" alt="Tom and Jerry poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #5</span>
+                <h3>Tom and Jerry</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.2/10</span></div>
+                <p>Tom and Jerry centres on the endless rivalry between Tom, a determined cat, and Jerry, a clever mouse who always seems to stay one step ahead. Their chases lead to ridiculous traps, chaotic accidents, and brilliantly timed physical comedy.</p>
+                <p>Their adventures prove that comedy does not always need dialogue to be memorable. With expressive animation, creative mischief, and a rivalry that sometimes turns into friendship, Tom and Jerry remains a timeless source of entertainment for audiences of different ages.</p>
+                <button class="watchlist-btn" data-title="Tom and Jerry">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 6. ATTACK ON TITAN -->
+        <article class="movie-card" data-genre="anime action fantasy">
+            <div class="movie-poster">
+                <img src="images/attack-on-titan.jpg" alt="Attack on Titan poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #6</span>
+                <h3>Attack on Titan</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.7/10</span></div>
+                <p>Humanity survives behind enormous walls built to protect it from giant man-eating Titans. After tragedy strikes his home, Eren Yeager joins the fight alongside Mikasa Ackerman and Armin Arlert, determined to uncover the truth about their enemies and the world beyond the walls.</p>
+                <p>Attack on Titan grows from a desperate survival story into a complicated exploration of freedom, fear, revenge, and the consequences of war. Its mysteries, shocking revelations, and morally difficult choices challenge viewers to question what makes someone a hero or a villain.</p>
+                <button class="watchlist-btn" data-title="Attack on Titan">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 7. JUJUTSU KAISEN -->
+        <article class="movie-card" data-genre="anime action fantasy">
+            <div class="movie-poster">
+                <img src="images/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #7</span>
+                <h3>Jujutsu Kaisen</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.4/10</span></div>
+                <p>Yuji Itadori's life changes when he encounters a cursed object and becomes involved in the dangerous world of jujutsu sorcerers. Under the guidance of Satoru Gojo, Yuji learns to face curses born from human negativity while struggling with the terrifying power connected to him.</p>
+                <p>The series blends energetic combat with dark humour, emotional losses, and questions about what it means to give someone a proper death. Its varied characters and supernatural battles make it an intense story about responsibility, friendship, and the cost of protecting others.</p>
+                <button class="watchlist-btn" data-title="Jujutsu Kaisen">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 8. ONE-PUNCH MAN -->
+        <article class="movie-card" data-genre="anime action comedy">
+            <div class="movie-poster">
+                <img src="images/one-punch-man.jpg" alt="One-Punch Man poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #8</span>
+                <h3>One-Punch Man</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.2/10</span></div>
+                <p>Saitama has trained so hard that he can defeat almost any opponent with a single punch. Despite his overwhelming strength, he struggles with boredom and the feeling that hero work has lost its excitement, while other heroes face increasingly dangerous threats.</p>
+                <p>One-Punch Man turns superhero conventions upside down through outrageous comedy and spectacular fights. Beneath the jokes, it explores recognition, purpose, and the difference between looking like a hero and genuinely choosing to help people.</p>
+                <button class="watchlist-btn" data-title="One-Punch Man">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 9. DEMON SLAYER -->
+        <article class="movie-card" data-genre="anime action fantasy">
+            <div class="movie-poster">
+                <img src="images/demon-slayer.jpg" alt="Demon Slayer poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #9</span>
+                <h3>Demon Slayer</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.5/10</span></div>
+                <p>After a demon attacks his family, Tanjiro Kamado discovers that his sister Nezuko has become a demon herself. Determined to find a way to restore her humanity, he trains as a Demon Slayer and enters a dangerous world filled with powerful enemies.</p>
+                <p>The story combines beautifully animated sword battles with grief, compassion, discipline, and family devotion. Tanjiro's kindness does not make him weak; instead, it gives him the strength to keep moving forward while recognising the pain behind many of the enemies he faces.</p>
+                <button class="watchlist-btn" data-title="Demon Slayer">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 10. BORUTO -->
+        <article class="movie-card" data-genre="anime action">
+            <div class="movie-poster">
+                <img src="images/boruto.jpg" alt="Boruto Naruto Next Generations poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #10</span>
+                <h3>Boruto: Naruto Next Generations</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.5/10</span></div>
+                <p>Boruto Uzumaki is the son of Naruto, the Seventh Hokage, and wants to create his own identity rather than live in his father's shadow. Alongside Sarada, Mitsuki, and other young shinobi, he faces missions and enemies that reveal how much the ninja world is changing.</p>
+                <p>The series explores the tension between tradition and progress, the meaning of family, and the pressure of inheriting a famous legacy. Boruto's journey is about discovering what kind of shinobi he wants to become while learning that strength also requires trust, humility, and sacrifice.</p>
+                <button class="watchlist-btn" data-title="Boruto: Naruto Next Generations">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 11. AVENGERS: ENDGAME -->
+        <article class="movie-card" data-genre="action superhero sci-fi">
+            <div class="movie-poster">
+                <img src="images/avengers-endgame.jpg" alt="Avengers Endgame poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #11</span>
+                <h3>Avengers: Endgame</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.8/10</span></div>
+                <p>After Thanos wipes out half of all life in the universe, the surviving Avengers struggle with loss and the collapse of the world they once knew. When a possible way to reverse the devastation emerges, they reunite for a risky mission that could change everything.</p>
+                <p>Endgame is a story about grief, hope, teamwork, and the sacrifices people make for those they love. It brings years of interconnected Marvel stories to an emotional turning point, giving its heroes a chance to confront their failures and decide what they are willing to risk for the future.</p>
+                <button class="watchlist-btn" data-title="Avengers: Endgame">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 12. SPIDER-MAN: NO WAY HOME -->
+        <article class="movie-card" data-genre="action superhero fantasy">
+            <div class="movie-poster">
+                <img src="images/spider-man-no-way-home.jpg" alt="Spider-Man No Way Home poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #12</span>
+                <h3>Spider-Man: No Way Home</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.3/10</span></div>
+                <p>After Peter Parker's identity as Spider-Man becomes public, he asks Doctor Strange for help. A spell goes wrong, opening the door to visitors from other universes and forcing Peter to confront dangerous enemies connected to different versions of his story.</p>
+                <p>The film mixes multiverse spectacle with a deeply personal story about responsibility and growing up. Peter must learn that being a hero sometimes means accepting painful consequences, even when doing the right thing costs him the life he hoped to have.</p>
+                <button class="watchlist-btn" data-title="Spider-Man: No Way Home">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 13. BLACK PANTHER -->
+        <article class="movie-card" data-genre="action superhero sci-fi">
+            <div class="movie-poster">
+                <img src="images/black-panther.jpg" alt="Black Panther poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #13</span>
+                <h3>Black Panther</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.9/10</span></div>
+                <p>Following his father's death, T'Challa returns to Wakanda to become king and protector of his technologically advanced nation. His right to rule is challenged by Erik Killmonger, whose arrival forces Wakanda to face difficult questions about its history and responsibilities to the wider world.</p>
+                <p>Black Panther combines superhero action with themes of heritage, leadership, justice, and belonging. Its central conflict asks whether protecting a nation means keeping its strength hidden or using that strength to help others, making T'Challa's choices as a king just as important as his battles.</p>
+                <button class="watchlist-btn" data-title="Black Panther">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 14. AVENGERS: INFINITY WAR -->
+        <article class="movie-card" data-genre="action superhero sci-fi">
+            <div class="movie-poster">
+                <img src="images/avengers-infinity-war.jpg" alt="Avengers Infinity War poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #14</span>
+                <h3>Avengers: Infinity War</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.4/10</span></div>
+                <p>Thanos begins his campaign to collect all six Infinity Stones, believing that his plan will restore balance to the universe. The Avengers and their allies fight across several worlds, dividing their efforts as they try to prevent him from gaining unlimited power.</p>
+                <p>The film builds tension by bringing many heroes together against an enemy whose strength and determination seem almost impossible to overcome. Its themes of sacrifice, loyalty, and the danger of imposing one's beliefs on everyone else lead to one of the Marvel universe's most dramatic turning points.</p>
+                <button class="watchlist-btn" data-title="Avengers: Infinity War">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 15. DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS -->
+        <article class="movie-card" data-genre="action superhero fantasy">
+            <div class="movie-poster">
+                <img src="images/doctor-strange-multiverse.jpg" alt="Doctor Strange in the Multiverse of Madness poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #15</span>
+                <h3>Doctor Strange in the Multiverse of Madness</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.6/10</span></div>
+                <p>Doctor Stephen Strange encounters America Chavez, a young woman with the ability to travel between universes. As powerful forces pursue her, Strange journeys through unfamiliar realities and discovers that the multiverse holds dangers beyond what he expected.</p>
+                <p>The film explores grief, ambition, and the temptation to control every outcome. Its strange alternate worlds and magical confrontations also challenge Strange to recognise the limits of his own judgement and understand that protecting someone may require letting them make their own choices.</p>
+                <button class="watchlist-btn" data-title="Doctor Strange in the Multiverse of Madness">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 16. THE SPONGEBOB SQUAREPANTS MOVIE -->
+        <article class="movie-card" data-genre="animation comedy">
+            <div class="movie-poster">
+                <img src="images/spongebob-movie.jpg" alt="The SpongeBob SquarePants Movie poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #16</span>
+                <h3>The SpongeBob SquarePants Movie</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.7/10</span></div>
+                <p>When Mr. Krabs is framed and King Neptune's crown goes missing, SpongeBob and Patrick set out on a dangerous journey to retrieve it. Their adventure takes them far beyond the familiar streets of Bikini Bottom and puts their courage and friendship to the test.</p>
+                <p>The film combines the show's playful absurdity with a story about believing in yourself. SpongeBob's optimism is often mistaken for immaturity, but his loyalty and bravery show that being underestimated does not mean being incapable of doing something extraordinary.</p>
+                <button class="watchlist-btn" data-title="The SpongeBob SquarePants Movie">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 17. AVATAR: THE LAST AIRBENDER -->
+        <article class="movie-card" data-genre="animation action fantasy">
+            <div class="movie-poster">
+                <img src="images/avatar-last-airbender.jpg" alt="Avatar The Last Airbender poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #17</span>
+                <h3>Avatar: The Last Airbender</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.5/10</span></div>
+                <p>Aang, a young Air Nomad and the Avatar, awakens after a century frozen in ice to discover that the Fire Nation has waged war against the other nations. With Katara, Sokka, and later Toph and other allies, he travels the world to master the elements and confront Fire Lord Ozai.</p>
+                <p>The story balances adventurous humour with meaningful lessons about responsibility, identity, forgiveness, and the cost of war. Aang's struggle to fulfil his duty without losing his compassion makes the series a memorable journey about finding balance in the world and within oneself.</p>
+                <button class="watchlist-btn" data-title="Avatar: The Last Airbender">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 18. TEENAGE MUTANT NINJA TURTLES: MUTANT MAYHEM -->
+        <article class="movie-card" data-genre="animation action comedy">
+            <div class="movie-poster">
+                <img src="images/tmnt-mutant-mayhem.jpg" alt="Teenage Mutant Ninja Turtles Mutant Mayhem poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #18</span>
+                <h3>Teenage Mutant Ninja Turtles: Mutant Mayhem</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.8/10</span></div>
+                <p>After years of living away from human society, the four turtle brothers want to be accepted by the people of New York. Their attempt to live normal teenage lives leads them into conflict with a mysterious criminal threat and other mutants.</p>
+                <p>The film combines energetic action, distinctive animation, and the familiar bond between the brothers with a story about fitting in. Their search for acceptance shows how difficult it can be to balance personal independence with family protection and the desire to belong.</p>
+                <button class="watchlist-btn" data-title="Teenage Mutant Ninja Turtles: Mutant Mayhem">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 19. BEN 10 -->
+        <article class="movie-card" data-genre="animation action sci-fi">
+            <div class="movie-poster">
+                <img src="images/ben-ten.jpg" alt="Ben 10 poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #19</span>
+                <h3>Ben 10</h3>
+                <div class="movie-rating"><span class="stars">★★★★★</span><span class="rating-score">9.0/10</span></div>
+                <p>During a summer road trip with his Grandpa Max and cousin Gwen, Ben Tennyson discovers the Omnitrix, a mysterious device that allows him to transform into different alien heroes. His new powers bring excitement, but they also attract dangerous enemies who want the device for themselves.</p>
+                <p>Ben's adventures mix science-fiction action with humour and lessons about responsibility. As he learns to use the Omnitrix wisely, he discovers that being a hero is not simply about having extraordinary powers, but about making brave choices and protecting people who need help.</p>
+                <button class="watchlist-btn" data-title="Ben 10">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+        <!-- 20. JIMMY NEUTRON: BOY GENIUS -->
+        <article class="movie-card" data-genre="animation comedy sci-fi">
+            <div class="movie-poster">
+                <img src="images/jimmy-neutron.jpg" alt="Jimmy Neutron Boy Genius poster">
+            </div>
+            <div class="movie-info">
+                <span class="movie-rank">RANK #20</span>
+                <h3>Jimmy Neutron: Boy Genius</h3>
+                <div class="movie-rating"><span class="stars">★★★★☆</span><span class="rating-score">8.4/10</span></div>
+                <p>Jimmy Neutron is a brilliant young inventor whose experiments frequently cause unexpected trouble. When the children of Retroville discover that their parents have been abducted by aliens, Jimmy and his friends build machines and launch a rescue mission into space.</p>
+                <p>The movie celebrates curiosity, creativity, and friendship while showing that intelligence alone cannot solve every problem. Jimmy learns that even the smartest inventor needs courage, teamwork, and an appreciation for the people who support him.</p>
+                <button class="watchlist-btn" data-title="Jimmy Neutron: Boy Genius">♡ Add to Watchlist</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+    <section id="about">
+        <h2>About This Website</h2>
+        <p>A personal collection of movies, ranked and reviewed by me.</p>
+    </section>
+        <section id="about" class="about-section">
+        <p class="about-label">BEHIND THE RANKINGS</p>
+        <h2>About the Creator</h2>
+
+        <p>
+            Welcome to IBN SULAIMON MOVIE RANKINGS, a personal space
+            dedicated to celebrating unforgettable movies, anime,
+            legendary characters, and extraordinary stories.
+        </p>
+
+        <p>
+            I'm Ibn Sulaimon, a creative mind with a passion for
+            technology, design, anime, and entertainment. From epic
+            battles and powerful characters to timeless comedy,
+            I rank and explore the stories that leave a lasting impression.
+        </p>
+
+        <p>
+            These rankings reflect my personal opinions, experiences,
+            and appreciation for great storytelling.
+        </p>
+
+        <div class="creator-signature">
+            <span>CREATED WITH PASSION BY</span>
+            <h3>IBN SULAIMON</h3>
+        </div>
+    </section>
+    </main>
+<footer>
+<div class="footer-bottom">
+    <div class="footer-creator">
+        <img src="images/creator.jpg"
+             alt="IBN SULAIMON - Website Creator"
+             class="creator-image">
+
+        <p class="creator-label">DESIGNED & DEVELOPED BY</p>
+        <h3 class="creator-name">IBN SULAIMON</h3>
+        <p class="creator-tagline">
+            Creator • Designer • Entertainment Enthusiast
+        </p>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 IBN SULAIMON MOVIE RANKINGS. All rights reserved.
+    </p>
+</div>
+</footer>
+    <script src="watchlist.js"></script>
+</body>
+</html>
